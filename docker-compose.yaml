@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+    svetovid:
+        environment:
+            - EP=do:svd-test01
+            - PSK=test01
+            - SERVER_HOST=lwm2m-test.avsystem.io
+            - LOG_LEVEL=info
+        volumes:
+            - '/home/user/docker_config/svd_test-01:/etc/svetovid/dm'
+        image: avspresales.jfrog.io/poc-docker/anjay-commercial:latest
+        restart: unless-stopped
+        logging:
+            driver: "local"
+            options:
+                max-size: 100m
