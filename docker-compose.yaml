@@ -2,7 +2,7 @@ version: '3.3'
 services:
     svetovid:
         environment:
-            - EP=do:svd-test01
+            - EP=svd-test01
             - PSK=test01
             - SERVER_HOST=lwm2m-test.avsystem.io
             - LOG_LEVEL=info
