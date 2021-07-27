@@ -11,6 +11,6 @@ services:
         image: avspresales.jfrog.io/poc-docker/svetovid-commercial:latest
         restart: unless-stopped
         logging:
-            driver: "local"
+#            driver: "local"
             options:
                 max-size: 100m
